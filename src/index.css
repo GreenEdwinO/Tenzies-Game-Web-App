@@ -6,7 +6,7 @@
 body {
   box-sizing: border-box;
   background-color: #0B2434;
-  margin: auto 10%;
+  margin: auto;
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -14,35 +14,33 @@ body {
 
 main {
   background-color: #cac3c3;
-  height: 500px;
-  max-width: 600px;
+  height: 100vh;
+  width: 600px;
   border-radius: 5px;
-  padding: 20px;
-  margin: 7% auto 1% auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 3px 3px 3px 0px rgb(69, 51, 51);
-
 }
 
 .container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
-  gap: 15px;
+  gap: 30px;
   justify-items: center;
   place-items: center;
+  margin: 2% auto;
 }
 
 .img {
-  max-width: 290px;
+  width: 500px;
+  height: 300px;
   border-radius: 6px;
   display: flex;
-  max-height: 215px;
   align-self: center;
   justify-content: center;
-  margin: 2%;
 }
 
 .face {
@@ -67,13 +65,13 @@ main {
 }
 
 .btn {
-  width: 175px;
+  width: 250px;
   padding: 10px;
   margin-top: 3%;
   color: #fff;
   background-color: rgb(20, 20, 125);
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 1.3rem;
   border-radius: 6px ;
   border: none;
   margin-bottom: 0;
@@ -90,15 +88,15 @@ main {
 
 .title {
   font-size: 2rem;
-  margin: 3% 0 0 0;
+  margin: 1% 0 3% 0;
 }
 
 .inst {
   font-family: Tahoma;
-  font-weight: 540;
+  font-weight: 500;
   text-align: center;
   line-height: 20px;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .made {
@@ -106,66 +104,88 @@ main {
   margin-bottom: 6px;
   border-bottom: 0;
   font-size: .6rem;
-  text-decoration-line: none;
   color: black;
   font-weight: 600;
-  text-underline-position: below;
 }
 
 @media screen and (max-width: 720px) {
+  main {
+    height: 100vh;
+    width: 550px;
+  }
+  
 .container {
   display: grid;
   grid-template: auto auto / repeat(5, 2fr);
-  gap: 7px;
+  gap: 25px;
   justify-content: space-evenly;
+  height: 100%;
+
 }
 .dice-num {
   font-size: 1.2rem;
 }
 .btn {
-  width: 170px;
+  width: 210px;
   padding: 6px;
   margin: 2%;
   border-top: 1rem;
   color: #fff;
   background-color: blue;
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 1.2rem;
   border-radius: 6px ;
   border: none;
 }
 img {
-  width: 300px;
-  margin: auto 1%;
+  width: 100%;
+  margin: auto 4%;
   border-radius: 6px;
 }
 }
 
 @media screen and (max-width: 480px) {
   main {
-    margin: 10% 1% 1% 1%;
+    height: 100vh;
+    width: 400px;
+  }
+  .title {
+    font-size: 1.8rem;
+    margin: 3% 0 1% 0;
   }
   .container {
-    gap: 2px;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
   }
   img {
-    width: 250px;
-    margin: auto 3%;
+    width: 100%;
+    margin: auto 2%;
     border-radius: 6px;
   }
   .face {
-    height: 45px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
+  }
+  .btn {
+    width: 250px;
+    margin: 1% auto 1% auto;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 350px) {
   main {
-    margin: 10% 1% 1% 1%;
+    height: 100vh;
+    width: 300px;
   }
   img {
     width: 180px;
     margin: auto 1%;
     border-radius: 3px;
+  }
+  .container {
+    gap: 6px;
+    margin: 5% auto;
   }
   .face {
     height: 40px;

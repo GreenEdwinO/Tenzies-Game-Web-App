@@ -89,7 +89,7 @@ const diceEle = dice.map(die => (
     <main>
       
       <h2 className="title">Tenzies</h2>
-      {tenz ? <img src={Img} alt="congrat" width="300px" className="img"/> : <p className="inst">Your goal is to roll untill <strong>all Dice </strong>are the same NUMBER. Click the particlar NUMBER to freeze it at its current value between rolls.</p>}
+      {tenz ? <img src={Img} alt="congrat" width="300px" className="img"/> : <p className="inst">Your goal is to roll untill <strong>all Dice </strong>are the same NUMBER. <br/>Click the particlar NUMBER to freeze it at its current value between rolls.</p>}
 
       <div className="container">
         {diceEle}
@@ -102,7 +102,7 @@ const diceEle = dice.map(die => (
           Number of Roll: {count}
       </button>
 
-      <p className="made">Made by <a href="http://greenojegwo.netlify.app/" className="made">Green↗</a></p>
+      <p className="made">Made by <a href="http://greenojegwo.netlify.app/" className="made">Green ⤴↗</a></p>
     </main>
   )
 }
