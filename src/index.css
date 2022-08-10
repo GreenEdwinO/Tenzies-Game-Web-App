@@ -18,7 +18,7 @@ main {
   max-width: 600px;
   border-radius: 5px;
   padding: 20px;
-  margin: 5% 20%;
+  margin: 5% 15% 2% 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@ main {
 }
 
 .img {
-  max-width: 300px;
+  max-width: 290px;
   border-radius: 6px;
   display: flex;
   max-height: 215px;
@@ -67,7 +67,7 @@ main {
 }
 
 .btn {
-  width: 170px;
+  width: 175px;
   padding: 10px;
   margin-top: 3%;
   color: #fff;
@@ -107,52 +107,68 @@ main {
   border-bottom: 0;
   font-size: .6rem;
   text-decoration-line: none;
+  color: black;
+  font-weight: 600;
+  text-underline-position: below;
 }
 
 @media screen and (max-width: 720px) {
-  main {
-    margin: 5% 5%;
-  }
 .container {
   display: grid;
   grid-template: auto auto / repeat(5, 2fr);
   gap: 7px;
   justify-content: space-evenly;
 }
-.face {
-  height: 40px;
-  width: 40px;
-  font-size: 1rem;
-}
 .dice-num {
-  font-size: .9rem;
+  font-size: 1.2rem;
 }
 .btn {
-  width: 150px;
+  width: 170px;
   padding: 6px;
   margin: 2%;
   border-top: 1rem;
   color: #fff;
   background-color: blue;
   cursor: pointer;
-  font-size: .7rem;
+  font-size: .9rem;
   border-radius: 6px ;
   border: none;
 }
 img {
-  max-width: 300px;
-  margin: auto 4%;
+  width: 300px;
+  margin: auto 1%;
   border-radius: 6px;
 }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
   main {
-    margin: 5% 5%;
+    margin: 10% 1% 1% 1%;
+  }
+  .container {
+    gap: 2px;
   }
   img {
-    max-width: 180px;
-    margin: auto 6%;
+    width: 250px;
+    margin: auto 3%;
     border-radius: 6px;
+  }
+  .face {
+    height: 45px;
+    width: 45px;
+  }
+}
+@media screen and (max-width: 350px) {
+  main {
+    margin: 10% 1% 1% 1%;
+  }
+  img {
+    width: 180px;
+    margin: auto 1%;
+    border-radius: 3px;
+  }
+  .face {
+    height: 40px;
+    width: 40px;
   }
 }
